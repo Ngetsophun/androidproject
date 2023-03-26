@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Invoice.Invoiceitems">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/teal_200"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Invoice"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:src="@drawable/cover"
+                    android:layout_height="90dp">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="ក្រុមហ៊ុនប្លូទិចណូឡូជី"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center|start"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="20dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Blue Technology CO.,LTD"
+                        android:textSize="15dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="10dp"
+                        android:text="No. 73BG, Street 360, Sangkat Boeung Keng Kang III Phnom Penh, Cambodia 12304"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Receipt No: "
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="200dp"
+                    android:text="Date/time"
+                    android:gravity="center|start"
+                    android:layout_height="40dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="ChashierName"
+
+                        android:gravity="end|center"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:id="@+id/InvoiceNo"
+                        android:layout_width="20dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:text="No"/>
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/proName"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:text="Items"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/proQty"
+                        android:layout_width="40dp"
+                        android:gravity="center"
+
+                        android:layout_height="match_parent"
+                        android:text="Qty"/>
+
+
+                    <TextView
+
+                        android:layout_width="55dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:text="Price"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:text="Total"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="-------------------------------------------------------------------------------------------------"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="50dp"
+                    android:text="TotalNo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Item(s)"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <Button
+
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/blue2"
+                    android:text="Caculate"
+                    android:textSize="17dp" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="0dp"></Space>
+
+                <Button
+
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/blue2"
+                    android:text="Cash"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

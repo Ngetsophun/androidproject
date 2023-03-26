@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Check_out.Comfirm_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/back2"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_toolbar_back_cash"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Confirm"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/img_toolbar_back_cash"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="match_parent">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:hint="Customer Name">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/Spinner_select_Customer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </AutoCompleteTextView>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:hint="Payment">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/Spinner_select_addPayment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </AutoCompleteTextView>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:hint="Discount(%)">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="50dp">
+                            <TextView
+                                android:layout_width="120dp"
+                                android:text="Exchage Money (៛):"
+                                android:gravity="center|start"
+                                android:layout_height="match_parent">
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/check_exchageMoney"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center|start"
+                                android:text="Exchage Money"></TextView>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_height="wrap_content"
+                        android:hint="Discount(%)">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/checkDiscount_p"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="150dp"
+                            android:text="Total($)"
+                            android:gravity="start|center"
+                            android:textSize="18dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:id="@+id/checkSubTotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/green"
+                            android:gravity="start|center"
+
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="150dp"
+                            android:text="Discount Amount"
+                            android:gravity="start|center"
+                            android:textSize="18dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:id="@+id/checkdiscoountAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                           android:textColor="@color/read"
+                            android:gravity="start|center"
+
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:layout_height="50dp">
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:orientation="vertical"
+
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TOTAL AFTER"
+                                android:textStyle="bold"
+                                android:textSize="17dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Discount(R)"
+                                android:textSize="16dp"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/check_Discount_R"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="start|center"
+
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:layout_height="50dp">
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TOTAL AFTER"
+                                android:textStyle="bold"
+                                android:textSize="18dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Discount($)"
+                                android:textSize="16dp"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/check_Discount_D"
+                            android:gravity="start|center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_height="wrap_content"
+                        android:hint="Receive($)">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:inputType="numberDecimal"
+                            android:id="@+id/Confirm_Receive_D"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="150dp"
+                            android:text="Chage($)"
+                            android:gravity="start|center"
+                            android:textSize="17dp"
+                            android:layout_height="50dp"/>
+                        <TextView
+                            android:layout_width="150dp"
+                            android:id="@+id/moneychange_D"
+                            android:text="Change"
+                            android:gravity="start|center"
+                            android:textSize="17dp"
+                            android:layout_height="50dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="150dp"
+                            android:text="Chage(៛)"
+                            android:gravity="start|center"
+                            android:textSize="18dp"
+                            android:layout_height="50dp"/>
+                        <TextView
+                            android:layout_width="150dp"
+                            android:id="@+id/moneychange_KH"
+                            android:text="Change"
+                            android:gravity="start|center"
+                            android:textSize="18dp"
+                            android:layout_height="50dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="100dp">
+
+                        <Button
+                           android:id="@+id/btnCaculate"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/blue2"
+                            android:text="Caculate"
+                            android:textSize="17dp" />
+
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="0dp"></Space>
+
+                        <Button
+                            android:id="@+id/btncheck_out"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/blue2"
+                            android:text="Check Out"
+                            android:textSize="17dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

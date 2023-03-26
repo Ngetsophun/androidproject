@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/showAllFragement"
+    tools:context=".Exchange.ExchangeFragment">
+<!--    <include layout="@layout/custom_toolbar"/>-->
+
+
+<!--    show fragement-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/showFragement"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_exchage"
+                android:layout_width="match_parent"
+                tools:listitem="@layout/custom_show_exchage"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnUp_exchage"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/blue2"
+                android:text="Update"
+                android:textSize="17dp" />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="0dp"></Space>
+
+            <Button
+
+                android:id="@+id/btnAdd_excahge"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/blue2"
+                android:text="Add"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+<!--    add fragement-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/addFragement"
+        android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            android:hint="Exchage">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/exchage_money"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            android:hint="Describtion">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/exchage_Describtion"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnbackchage"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/blue2"
+                android:text="Back"
+                android:textSize="17dp" />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="0dp"></Space>
+
+            <Button
+
+                android:id="@+id/btnchage"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/blue2"
+                android:text="Chage"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+<!--    Update fragement-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/updateFragement"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:endIconMode="clear_text"-->
+<!--            android:hint="Exchage">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="text"-->
+<!--                android:id="@+id/Up_exchage_money"/>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:endIconMode="clear_text"-->
+<!--            android:hint="Describtion">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="text"-->
+<!--                android:id="@+id/Up_exchage_Describtion"/>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <Button-->
+<!--                android:id="@+id/btnUp_backexchage"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:backgroundTint="@color/blue2"-->
+<!--                android:text="Back"-->
+<!--                android:textSize="17dp" />-->
+<!--            <Space-->
+<!--                android:layout_width="10dp"-->
+<!--                android:layout_height="0dp"></Space>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnUp_saveexchage"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:backgroundTint="@color/blue2"-->
+<!--                android:text="Save"-->
+<!--                android:textSize="17dp" />-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+
+
+
+
+
+
+</FrameLayout>

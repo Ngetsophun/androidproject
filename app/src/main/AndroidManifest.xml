@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SystemPOS"
+        tools:targetApi="31">
+        <activity
+            android:name=".Setting.Update_settingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Exchange.Update_Exchagectivity"
+            android:exported="false" />
+        <activity
+            android:name=".Check_out.Comfirm_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Check_out.CheckOut_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".About_US_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".User.DefaultUser"
+            android:exported="false" />
+        <activity
+            android:name=".Card.CardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sale.Sale_ProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.Detail_CustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".location.Update_Location_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".location.LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Payment.Show_PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Payment.Update_PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.Update_CustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.View_Customer"
+            android:exported="false" />
+        <activity
+            android:name=".Product.UpdateProduct"
+            android:exported="false" />
+        <activity
+            android:name=".Invoice.Invoiceitems"
+            android:exported="false" />
+        <activity
+            android:name=".User.UpdateUser"
+            android:exported="false" />
+        <activity
+            android:name=".Product.ViewAll_item"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".LoginForm.LoginActivity" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".Catogory.Update_Catogory"
+            android:exported="false" />
+        <activity
+            android:name=".Catogory.View_Catogoey"
+            android:exported="false" />
+        <activity
+            android:name=".User.ViewUser"
+            android:exported="false" />
+        <activity
+            android:name=".LoginForm.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginForm.Splash_Screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:orientation="vertical"
+        android:layout_height="300dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/check_save">
+
+        </com.airbnb.lottie.LottieAnimationView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Success"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Your action performed successfully"
+            android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnDialog_user_ok"
+                android:layout_marginLeft="20dp"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:text="OK">
+
+            </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

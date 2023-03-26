@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Dashboard"
+        android:icon="@drawable/dashboard"
+        android:id="@+id/dashboard"
+        />
+
+
+
+    <item
+        android:title="About US"
+        android:icon="@drawable/about"
+        android:id="@+id/About_US"
+        />
+    <item
+        android:title="Exchage"
+        android:icon="@drawable/baseline_settings_24"
+        android:id="@+id/exchage"
+        />
+    <item
+        android:title="Setting"
+        android:icon="@drawable/baseline_settings_24"
+        android:id="@+id/setting"
+        />
+    <item
+        android:title="languages"
+        android:icon="@drawable/baseline_language_24"
+        android:id="@+id/languages"
+        />
+
+    <item
+        android:title="Logout"
+        android:icon="@drawable/logout"
+        android:id="@+id/Logout"
+
+        />
+
+
+
+
+
+</menu>
